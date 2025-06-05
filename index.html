@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fisioterapia Pablo Vega</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #76c7c0;
+      --secondary-color: #edf7f6;
+      --text-color: #333;
+      --accent-color: #45a29e;
+      --font-family: 'Montserrat', sans-serif;
+      --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      --border-radius: 12px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: var(--font-family);
+    }
+
+    body {
+      background-color: var(--secondary-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      padding: 1.5rem;
+      text-align: center;
+      color: white;
+      animation: fadeInDown 1s ease-out;
+      width: 100%;
+      max-width: 1000px;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      margin-top: 1rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 1rem 0;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      width: 100%;
+      background: white;
+      padding: 1rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--accent-color);
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--text-color);
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      width: 100%;
+      animation: fadeIn 1s ease-in;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: white;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      margin-bottom: 2rem;
+    }
+
+    section h2 {
+      margin-bottom: 1rem;
+      color: var(--accent-color);
+      text-align: center;
+    }
+
+    section p,
+    section ul {
+      text-align: justify;
+      max-width: 800px;
+      width: 100%;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--primary-color);
+      color: white;
+      width: 100%;
+      max-width: 1000px;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      margin-bottom: 1rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fisioterapia Pablo Vega</h1>
+  </header>
+
+  <nav>
+    <a href="#about">Sobre mí</a>
+    <a href="#services">Servicios</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>Sobre mí</h2>
+    <p>Con más de 10 años de experiencia en el sector, en Fisioterapia Pablo Vega ayudamos a mejorar tu bienestar físico mediante técnicas personalizadas y un trato humano y profesional.</p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Servicios</h2>
+    <ul>
+      <li>Fisioterapia deportiva</li>
+      <li>Rehabilitación post-quirúrgica</li>
+      <li>Tratamiento de lesiones musculares y articulares</li>
+      <li>Masaje terapéutico y relajante</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contacto</h2>
+    <p>📍 Dirección: Córdoba</p>
+    <p>📞 Teléfono: 691 500 130</p>
+    <p>📧 Email: fisioterapiapablovega@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Fisioterapia Pablo Vega. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
