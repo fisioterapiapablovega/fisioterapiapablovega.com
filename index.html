@@ -4,142 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fisioterapia Pablo Vega</title>
+  
+  <!-- FUENTES -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <style>
-    :root {
-      --primary-color: #76c7c0;
-      --secondary-color: #edf7f6;
-      --text-color: #333;
-      --accent-color: #45a29e;
-      --font-family: 'Montserrat', sans-serif;
-      --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      --border-radius: 12px;
-    }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: var(--font-family);
-    }
+  <!-- FAVICONS -->
+  <link rel="icon" type="image/x-icon" href="favicons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="favicons/android-chrome-512x512.png">
+  <link rel="manifest" href="favicons/site.webmanifest">
+  <meta name="theme-color" content="#ffffff">
 
-    body {
-      background-color: var(--secondary-color);
-      color: var(--text-color);
-      line-height: 1.6;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    header {
-      background-color: var(--primary-color);
-      padding: 1.5rem;
-      text-align: center;
-      color: white;
-      animation: fadeInDown 1s ease-out;
-      width: 100%;
-      max-width: 1000px;
-      border-radius: var(--border-radius);
-      box-shadow: var(--shadow);
-      margin-top: 1rem;
-    }
-
-    header h1 {
-      font-size: 2rem;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      margin: 1rem 0;
-      flex-wrap: wrap;
-      max-width: 1000px;
-      width: 100%;
-      background: white;
-      padding: 1rem;
-      border-radius: var(--border-radius);
-      box-shadow: var(--shadow);
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--accent-color);
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--text-color);
-    }
-
-    section {
-      padding: 2rem;
-      max-width: 1000px;
-      width: 100%;
-      animation: fadeIn 1s ease-in;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background: white;
-      border-radius: var(--border-radius);
-      box-shadow: var(--shadow);
-      margin-bottom: 2rem;
-    }
-
-    section h2 {
-      margin-bottom: 1rem;
-      color: var(--accent-color);
-      text-align: center;
-    }
-
-    section p,
-    section ul {
-      text-align: justify;
-      max-width: 800px;
-      width: 100%;
-    }
-
-    ul li {
-      margin-bottom: 0.5rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: var(--primary-color);
-      color: white;
-      width: 100%;
-      max-width: 1000px;
-      border-radius: var(--border-radius);
-      box-shadow: var(--shadow);
-      margin-bottom: 1rem;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.5rem;
-      }
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  </style>
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <header>
     <h1>Fisioterapia Pablo Vega</h1>
