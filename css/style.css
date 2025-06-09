@@ -15,6 +15,28 @@
       font-family: var(--font-family);
     }
 
+    @keyframes pulse-text {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1); /* Ligeramente más grande */
+        opacity: 0.9; /* Un poco más transparente */
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animated-text {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #007bff; /* Un azul que destaque */
+    animation: pulse-text 1s infinite ease-in-out; /* Duración de 2s, infinito, suavizado */
+}
+
 
     body {
       background-color: var(--secondary-color);
