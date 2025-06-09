@@ -111,6 +111,37 @@
       margin-bottom: 1rem;
     }
 
+    /* BOTON WHATSAPP */
+    .whatsapp-button {
+    /* Colores y tamaño */
+    background-color: #25D366; /* Verde vibrante de WhatsApp */
+    color: white;
+    padding: 15px 30px; /* Más relleno para un botón más grande */
+    border: none;
+    border-radius: 8px; /* Bordes ligeramente más redondeados */
+    font-size: 1.15em; /* Tamaño de fuente un poco más grande */
+    font-weight: 600; /* Texto más negrita */
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; /* Centrar contenido */
+    text-decoration: none; /* Asegura que no haya subrayado en el texto si el <a> es el botón */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves para interactividad */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para profundidad */
+}
+
+.whatsapp-button:hover {
+    background-color: #1DA851; /* Un verde un poco más oscuro al pasar el ratón */
+    transform: translateY(-2px); /* Ligero efecto de elevación al pasar el ratón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+.whatsapp-button:active {
+    background-color: #168C42; /* Verde aún más oscuro al hacer clic */
+    transform: translateY(0); /* Vuelve a su posición original */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Sombra más pequeña */
+}
+
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
@@ -130,3 +161,4 @@
         align-items: center;
       }
     }
+
